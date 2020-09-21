@@ -1,0 +1,102 @@
+body{
+    background-color:white;
+    font-family:"Roboto",sans-serif;
+    margin:0 ;
+}
+header{
+    background-image:url("./car\ image.jpg");
+    color:white;
+    min-height:calc(100vh - 102px);
+    background-size:cover;
+    display:flex;
+    background-position:center center;
+    flex-direction:column;
+    align-items:flex-start;
+
+}
+.container{
+    max-width:100%;
+    width:1000px;
+    margin:0 auto;
+    max-width:100%;
+    padding:1rem;
+
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:1rem;
+}
+nav .logo{
+    font-size:2.5 rem;
+}
+nav ul{
+    display:flex;
+    list-style-type:none;
+    
+}
+nav li a{
+    color:white;
+    text-decoration:none;
+    padding:1rem;
+}
+.highlight{
+    background-color:peru;
+}
+.selected{
+    font-weight:bold;
+}
+.content{
+    margin:auto;
+}
+.content .highlight{
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    overflow: hidden;
+    
+}
+.content h1{
+    color:peru;
+}
+footer{
+    height:100px;
+    background-color:black;
+    color:white;
+    padding:1rem;
+}
+footer ul{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style-type:none;
+    padding:0;
+}
+footer strong{
+    color:peru;
+}
+footer p{
+    
+margin:0;
+}
+@media screen and (max-width:700px){
+    nav ul{
+        flex-direction: column ;
+    }
+    nav li:not(:last-child){
+        margin:1rem;
+    }
+    nav .highlight{
+        display:none;
+    }
+    footer ul{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer li{
+        margin:1rem;
+        text-align:center;
+    }
+}
+
+
